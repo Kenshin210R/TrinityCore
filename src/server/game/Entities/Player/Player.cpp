@@ -24130,6 +24130,8 @@ void Player::SendInitialPacketsAfterAddToMap()
     GetSession()->SendLoadCUFProfiles();
 
     CastSpell(this, 836, true);                             // LOGINEFFECT
+	
+	SetPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
 
     AddPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
 
