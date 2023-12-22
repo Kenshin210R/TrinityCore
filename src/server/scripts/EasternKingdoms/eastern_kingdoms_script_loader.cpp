@@ -70,11 +70,10 @@ void AddSC_boss_flamegor();
 void AddSC_boss_chromaggus();
 void AddSC_boss_nefarian();
 void AddSC_instance_blackwing_lair();
-void AddSC_deadmines();                      //Deadmines
-void AddSC_instance_deadmines();
-void AddSC_boss_mr_smite();
+void AddSC_instance_deadmines();             //Deadmines
 void AddSC_gnomeregan();                     //Gnomeregan
 void AddSC_instance_gnomeregan();
+void AddSC_instance_grim_batol();            //Grim Batol
 void AddSC_boss_attumen();                   //Karazhan
 void AddSC_boss_curator();
 void AddSC_boss_maiden_of_virtue();
@@ -167,7 +166,7 @@ void AddSC_instance_the_stockade();          //The Stockade
 void AddSC_boss_hogger();
 void AddSC_boss_randolph_moloch();
 void AddSC_boss_lord_overheat();
-void AddSC_instance_throne_of_the_tides();
+void AddSC_instance_throne_of_the_tides();   //Throne of the Tides
 void AddSC_boss_akilzon();                   //Zul'Aman
 void AddSC_boss_halazzi();
 void AddSC_boss_hex_lord_malacrass();
@@ -266,11 +265,10 @@ void AddEasternKingdomsScripts()
     AddSC_boss_chromaggus();
     AddSC_boss_nefarian();
     AddSC_instance_blackwing_lair();
-    AddSC_deadmines();                      //Deadmines
-    AddSC_boss_mr_smite();
-    AddSC_instance_deadmines();
+    AddSC_instance_deadmines();             //Deadmines
     AddSC_gnomeregan();                     //Gnomeregan
     AddSC_instance_gnomeregan();
+    AddSC_instance_grim_batol();            //Grim Batol
     AddSC_boss_attumen();                   //Karazhan
     AddSC_boss_curator();
     AddSC_boss_maiden_of_virtue();
@@ -359,7 +357,7 @@ void AddEasternKingdomsScripts()
     AddSC_boss_hogger();
     AddSC_boss_randolph_moloch();
     AddSC_boss_lord_overheat();
-    AddSC_instance_throne_of_the_tides();
+    AddSC_instance_throne_of_the_tides();   //Throne of the Tides
     AddSC_boss_archaedas();                 //Uldaman
     AddSC_boss_ironaya();
     AddSC_uldaman();
