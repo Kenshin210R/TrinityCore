@@ -24297,8 +24297,9 @@ void Player::SendInitialPacketsBeforeAddToMap()
 }
 
 void Player::SendInitialPacketsAfterAddToMap() {
-    AddPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
+    SetPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
 }
+
 {
     UpdateVisibilityForPlayer();
 
@@ -24323,10 +24324,6 @@ void Player::SendInitialPacketsAfterAddToMap() {
     GetSession()->SendLoadCUFProfiles();
 
     CastSpell(this, 836, true);                             // LOGINEFFECT
-	
-	SetPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
-
-    SetPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
 
     // set some aura effects that send packet to player client after add player to map
     // SendMessageToSet not send it to player not it map, only for aura that not changed anything at re-apply
