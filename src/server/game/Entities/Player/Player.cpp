@@ -24296,7 +24296,9 @@ void Player::SendInitialPacketsBeforeAddToMap()
     SetMovedUnit(this);
 }
 
-void Player::SendInitialPacketsAfterAddToMap()
+void Player::SendInitialPacketsAfterAddToMap() {
+    AddPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
+}
 {
     UpdateVisibilityForPlayer();
 
