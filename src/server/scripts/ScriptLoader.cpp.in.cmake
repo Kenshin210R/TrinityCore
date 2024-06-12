@@ -62,3 +62,18 @@ TC_SCRIPT_API char const* GetBuildDirective()
 #ifdef TRINITY_IS_DYNAMIC_SCRIPTLOADER
 } // extern "C"
 #endif
+
+#include "ScriptMgr.h"
+
+// Declare your script function
+void AddSC_CustomCreatureLoot();
+
+void AddScripts()
+{
+    // Call your script registration function
+    AddSC_CustomCreatureLoot();
+
+    // Other script registration calls...
+    // AddSC_another_script();
+    // AddSC_yet_another_script();
+}
