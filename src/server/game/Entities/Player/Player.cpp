@@ -25128,6 +25128,9 @@ void Player::SendInitialPacketsAfterAddToMap()
     }
 
     GetSceneMgr().TriggerDelayedScenes();
+	
+	// Unlock the 4 authenticator backpack slots.
+    SetPlayerLocalFlag(PLAYER_LOCAL_FLAG_ACCOUNT_SECURED);
 }
 
 void Player::SendUpdateToOutOfRangeGroupMembers()

@@ -719,7 +719,7 @@ enum PlayerSlots
 static_assert(UF::size<decltype(UF::ActivePlayerData::InvSlots)>() == PLAYER_SLOT_END);
 
 inline constexpr uint8 INVENTORY_SLOT_BAG_0 = 255;
-inline constexpr uint8 INVENTORY_DEFAULT_SIZE = 16;
+inline constexpr uint8 INVENTORY_DEFAULT_SIZE = 20;
 inline constexpr uint8 INVENTORY_ACCOUNT_SECURED_BONUS_SIZE = 4;
 
 inline constexpr uint32 SPELL_ALPACA_SADDLEBAGS = 317795;

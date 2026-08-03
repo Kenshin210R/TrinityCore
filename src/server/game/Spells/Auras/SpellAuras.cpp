@@ -419,7 +419,6 @@ Aura* Aura::Create(AuraCreateInfo& createInfo)
     // check if aura can be owned by owner
     if (Unit* ownerUnit = createInfo._owner->ToUnit())
         if (!ownerUnit->IsInWorld() || ownerUnit->IsDuringRemoveFromWorld())
-            // owner not in world so don't allow to own not self cast single target auras
             if (createInfo.CasterGUID != ownerUnit->GetGUID() && createInfo._spellInfo->IsSingleTarget())
                 return nullptr;
 
@@ -431,11 +430,9 @@ Aura* Aura::Create(AuraCreateInfo& createInfo)
         {
             aura = new UnitAura(createInfo);
 
-            // aura can be removed in Unit::_AddAura call
             if (aura->IsRemoved())
                 return nullptr;
 
-            // add owner
             uint32 effMask = createInfo._auraEffectMask;
             if (createInfo._targetEffectMask)
                 effMask = createInfo._targetEffectMask;
@@ -458,7 +455,6 @@ Aura* Aura::Create(AuraCreateInfo& createInfo)
             return nullptr;
     }
 
-    // scripts, etc.
     if (aura->IsRemoved())
         return nullptr;
 
